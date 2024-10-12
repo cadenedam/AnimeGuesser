@@ -7,7 +7,7 @@
 - [Features](#features)
 
 ### Introduction
-AnimeGuesser is a program built using javascript, MongoDB, HTML, React, and Python. It showcases a simplistic use case for MVC architecture (Model-View-Controller), by implementing handling of data logic and communication alongside rudimentary UI controls. Then, we take a step further and make use of Python's MoviePy library, creating custom "Guess the anime" videos. As a kid, I used to watch anime with my siblings, and would often play games where we can listen to a song from an anime, and then have to guess which anime it's from. AnimeGuesser takes that game and semi-automates it, allowing a user to easily create "Guess the anime" videos!
+AnimeGuesser is a program built using JavaScript, MongoDB, HTML, React, and Python. It showcases a simplistic use case for MVC architecture (Model-View-Controller), by implementing handling of data logic and communication alongside rudimentary UI controls. Then, we take a step further and make use of Python's MoviePy library, creating custom "Guess the anime" videos. As a kid, I used to watch anime with my siblings, and would often play games where we can listen to a song from an anime, and then have to guess which anime it's from. AnimeGuesser takes that game and semi-automates it, allowing a user to easily create "Guess the anime" videos!
 
 ### Installation
 - Clone this repository
