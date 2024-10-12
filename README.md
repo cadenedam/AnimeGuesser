@@ -23,13 +23,12 @@ AnimeGuesser is a program built using javascript, MongoDB, HTML, React, and Pyth
 
 
 ### Usage
-First, start the server:
-- Node server.js
-Next, find a song on YouTube and download it's mp3 and mp4.
-Next, Go to localhost:5000 in your favorite web browser.
-Then, input the required information into the "Submit a Song" section.
-Finally, run "create_video.py"
-Congrats! Your Guess the Anime video is created!
+- First, start the server by running: Node server.js
+- Next, find a song on YouTube and download it's mp3 and mp4.
+- Next, Go to localhost:5000 in your favorite web browser.
+- Then, input the required information into the "Submit a Song" section.
+- Finally, run "create_video.py"
+- Congrats! Your Guess the Anime video is created!
 
 ### Features
 - Play guess the song straight from localhost:5000
