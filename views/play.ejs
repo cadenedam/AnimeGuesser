@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess this Song</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        #song-info {
+            display: none
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess This Song</h1>
+    <audio controls>
+        <source src="<%= song.filePath %>" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="song-info">
+        <p>Title: <%= song.title %></p>
+        <p>Artist: <%= song.artist %></p>
+        <p>Show: <%= song.show %></p>
+        <p>Difficulty: <%= song.difficulty %></p>
+    </div>
+    <div id="guess-form">
+        <input type="text" id="guess-input" placeholder="Guess this song title">
+        <button id="submit-guess">Submit Guess</button>
+        <button id="give-up">Give Up</button>
+    </div>
+    <a href="/play?<%= difficulty ? 'difficulty=' + difficulty : '' %>">Get Another Song</a>
+
+    <script>
+        document.getElementById('submit-guess').addEventListener('click', function() {
+            const guess = document.getElementById('guess-input').value.toLowerCase();
+            const title = "<%= song.title.toLowerCase() %>";
+        
+            if (guess === title) {
+                document.getElementById('song-info').style.display = 'block';
+                document.getElementById('guess-form').style.display = 'none';
+                alert('Correct! Here are the song details');
+            } else {
+                alert('Incorrect guess :(');
+            }
+        });
+        
+        document.getElementById('give-up').addEventListener('click', function() {
+            document.getElementById('song-info').style.display = 'block';
+            document.getElementById('guess-form').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
